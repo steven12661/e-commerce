@@ -1,14 +1,14 @@
+# E-commerce
 
-# Getting Started with Create React App
 
-  
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![(https://img.shields.io/badge/Powered%20by-React-60DBFB)](https://img.shields.io/badge/Powered%20by-React-60DBFB) | This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
   
-## Quick install required Dependencies 
-### `npm install`
- @material-ui/core @material-ui/icons @chec/commerce.js @stripe/react-stripe-js @stripe/stripe-js react-router-dom react-hook-form
+##  Dependencies 
+This app uses a number of dependencies to work properly to quickly install them paste the following line into the terminal in the project directory:
+
+`npm install @material-ui/core @material-ui/icons @chec/commerce.js @stripe/react-stripe-js @stripe/stripe-js react-router-dom react-hook-form`
+
 ## Available Scripts
 
   
@@ -121,7 +121,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 
 ### Advanced Configuration
 
-  
+
+
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
