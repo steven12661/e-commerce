@@ -1,10 +1,10 @@
 import React from 'react';
-import { Typography, Button, Card, CardActions, CardContent, CardMedia } from '@material-ui/core';
+import { Typography, Button, Card, CardActions, CardContent, CardMedia, Tooltip } from '@material-ui/core';
 
 import useStyles from './cartItemStyles';
 
 const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
-    const classes= useStyles();
+    const classes = useStyles();
 
     return (
         <Card>
@@ -15,12 +15,17 @@ const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
             </CardContent>
             <CardActions className={classes.cardActions}>
                 <div className={classes.buttons}>
-                    <Button type="button" size="small" onClick={() =>onUpdateCartQty(item.id, item.quantity - 1)}>-</Button>
+                    <Tooltip title="Remove 1">
+                        <Button type="button" size="small" onClick={() => onUpdateCartQty(item.id, item.quantity - 1)}>-</Button>
+                    </Tooltip>
                     <Typography>{item.quantity}</Typography>
-                    <Button type="button" size="small" onClick={() =>onUpdateCartQty(item.id, item.quantity + 1)}>+</Button>
-
+                    <Tooltip title="Add 1">
+                        <Button type="button" size="small" onClick={() => onUpdateCartQty(item.id, item.quantity + 1)}>+</Button>
+                    </Tooltip>
                 </div>
-                <Button variant="contained" type="button" color="secondary" onClick={()=> onRemoveFromCart(item.id)}>Remove</Button>
+                <Tooltip title="Remove item">
+                    <Button variant="contained" type="button" color="secondary" onClick={() => onRemoveFromCart(item.id)}>Remove</Button>
+                </Tooltip>
             </CardActions>
         </Card>
     )
