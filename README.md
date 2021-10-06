@@ -1,13 +1,20 @@
+
 # E-commerce
 
 
-![(https://img.shields.io/badge/Powered%20by-React-60DBFB)](https://img.shields.io/badge/Powered%20by-React-60DBFB) | This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
+![(https://img.shields.io/badge/Powered%20by-React-60DBFB)](https://img.shields.io/badge/Powered%20by-React-60DBFB) 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
   
 ##  Dependencies 
 This app uses a number of dependencies to work properly to quickly install them paste the following line into the terminal in the project directory:
 
 `npm install @material-ui/core @material-ui/icons @chec/commerce.js @stripe/react-stripe-js @stripe/stripe-js react-router-dom react-hook-form`
+OR
+After cloning the repo delete the node_modules folder and any 'lock' files such as 
+yarn.lock or package-lock.json if present.
+Then run `npm install` and after it finishes run `npm start`.
+
 
 ## Available Scripts
 
